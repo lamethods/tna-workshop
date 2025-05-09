@@ -11,11 +11,12 @@ metadata:
     - Mohammed Saqr
 website:
   title: "TNA workshop"
+  google-analytics: "G-Y4VBV3J9WD"
   repo-url: https://github.com/lamethods/tna-workshop/
   twitter-card: true
   site-url: https://lamethods.github.io/tna-workshop
   open-graph: true
-
+  fig-align: "center"
   sidebar:
     contents:
       - text: "Intro"
