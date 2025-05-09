@@ -10,7 +10,8 @@ name: Render and deploy website
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-    - name: Render Quarto Project
-      uses: quarto-dev/quarto-actions/render@v2
-      with:
-        to: html # If set, it will be equivalent to `quarto render --to html`
+    steps:
+      - name: Render Quarto Project
+        uses: quarto-dev/quarto-actions/render@v2
+        with:
+          to: html # If set, it will be equivalent to `quarto render --to html`
