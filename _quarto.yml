@@ -4,16 +4,18 @@ project:
 format:
   html:
     theme: cosmo
-author:   
-  - Kamila Misiejuk 
-  - Sonsoles López-Pernas
-  - Mohammed Saqr
+metadata:
+  authors:   
+    - Kamila Misiejuk 
+    - Sonsoles López-Pernas
+    - Mohammed Saqr
 website:
   title: "TNA workshop"
   repo-url: https://github.com/lamethods/tna-workshop/
   twitter-card: true
   site-url: https://lamethods.github.io/tna-workshop
   open-graph: true
+
   sidebar:
     contents:
       - text: "Intro"
