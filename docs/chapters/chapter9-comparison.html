@@ -38,7 +38,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-b6ab77e64108811dad6229af30134f6f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -179,6 +179,12 @@ gtag('config', 'G-Y4VBV3J9WD', { 'anonymize_ip': true});
  <span class="menu-text">Validation</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/chapter11-more.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">More resources</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -224,18 +230,7 @@ gtag('config', 'G-Y4VBV3J9WD', { 'anonymize_ip': true});
 <p>If you need calculations based on normalized values, check the <code>Normalize?</code> box.</p>
 <p>The centrality measures table is accompanied by visualizations. You can choose how many columns to use when displaying these visualizations by selecting the correct number in <code>Columns</code>.</p>
 <p><img src="vis/fig15.png" class="img-fluid"></p>
-<p>To compare two models and determine whether their differences are statistically significant, you can perform a <code>Permutation test</code> by checking the corresponding box. This test works by repeatedly shuffling and comparing the data to generate a distribution of differences under the null hypothesis. You can also adjust the number of <code>Iteratations</code> to control how many permutations are performed, which affects the accuracy of the resulting significance estimate, and set the <mark><code>level</code> - <strong>is this the level of statistical significance?</strong></mark> of stastical significance that you are interested in. Finally, you can also conduct a <mark><code>Paired test</code> - <strong>is this the parametric test? the network did not change much, when I ran it</strong></mark>. When you run the permutation and statistical tests, the <code>Mosaic</code> and <code>Centralities</code> tabs are automatically updated to reflect the results. <img src="vis/fig16.png" class="img-fluid"></p>
-<p>You can also adjust the following <strong>Settings</strong> in your permutation network:</p>
-<ol type="1">
-<li><p><code>Cut Value</code>: sets the minimum edge value required for the edge to appear solid (rather than opaque) in the graph.</p></li>
-<li><p><code>Minimum Value</code>: sets the lowest edge value that will be displayed in the graph.</p></li>
-<li><p><code>Edge Label Size</code>: adjusts the font size of edge labels.</p></li>
-<li><p><code>Node Size</code>: controls the visual size of each node.</p></li>
-<li><p><code>Node Label Size</code>: modifies the font size of node labels.</p></li>
-<li><p><code>Layout</code>: Choose between two layout options:</p></li>
-</ol>
-<p><code>Circle</code>: Positions all nodes in a circular formation, or</p>
-<p><mark><code>Spring</code>: <strong>- ?</strong></mark></p>
+<p>To compare two models and determine whether their differences are statistically significant, you can perform a <code>Permutation test</code> by checking the corresponding box. This test works by repeatedly shuffling and comparing the data to generate a distribution of differences under the null hypothesis. You can also adjust the number of <code>Iteratations</code> to control how many permutations are performed, which affects the accuracy of the resulting significance estimate, and set the <mark><code>level</code> - <strong>is this the level of statistical significance?</strong></mark> of stastical significance that you are interested in. Finally, you can also conduct a <mark><code>Paired test</code> - <strong>is this the parametric test? the network did not change much, when I ran it</strong></mark>. When you run the permutation and statistical tests, the <code>Mosaic</code> and <code>Centralities</code> tabs are automatically updated to reflect the results. <img src="vis/fig16.png" class="img-fluid"> Finally, you can adjust the same plot settings as in the Visualization section.</p>
 
 
 

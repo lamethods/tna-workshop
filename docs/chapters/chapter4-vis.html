@@ -38,7 +38,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-b6ab77e64108811dad6229af30134f6f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -179,6 +179,12 @@ gtag('config', 'G-Y4VBV3J9WD', { 'anonymize_ip': true});
  <span class="menu-text">Validation</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/chapter11-more.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">More resources</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -215,11 +221,12 @@ gtag('config', 'G-Y4VBV3J9WD', { 'anonymize_ip': true});
 </header>
 
 
+<p>Since all the three analysis methods result into some type of matrix, we can represent them as a network where the nodes (circles) are the actions/codes and the edges (arrows) are the transitions between them (in the case of relative and frequency analysis) or co-occurrence (in the case of the analysis of the same name).</p>
 <p>You can find your network visualization under <code>Visualization</code> on the left tab.</p>
 <p><img src="vis/fig9.png" class="img-fluid"></p>
 <p>To explore your network, you can adjust the following <strong>Settings</strong>:</p>
 <ol type="1">
-<li><p><code>Cut Value</code>: sets the minimum edge value required for the edge to appear solid (rather than opaque) in the graph.</p></li>
+<li><p><code>Cut Value</code>: sets the minimum edge value required for the edge to appear solid (rather than faded) in the graph.</p></li>
 <li><p><code>Minimum Value</code>: sets the lowest edge value that will be displayed in the graph.</p></li>
 <li><p><code>Edge Label Size</code>: adjusts the font size of edge labels.</p></li>
 <li><p><code>Node Size</code>: controls the visual size of each node.</p></li>
@@ -227,7 +234,7 @@ gtag('config', 'G-Y4VBV3J9WD', { 'anonymize_ip': true});
 <li><p><code>Layout</code>: Choose between two layout options:</p></li>
 </ol>
 <p><code>Circle</code>: Positions all nodes in a circular formation, or</p>
-<p><mark><code>Spring</code>: <strong>- how is it determined? based on values and centrality?</strong></mark></p>
+<p><code>Spring</code>: Positions all nodes based on an algorithm that simulates a force-directed representation of the network treating edges as springs holding nodes close, while treating nodes as repelling objects.</p>
 <p><img src="vis/fig10.png" class="img-fluid" style="width:70.0%"></p>
 
 

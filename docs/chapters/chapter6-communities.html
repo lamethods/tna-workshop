@@ -38,7 +38,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-b6ab77e64108811dad6229af30134f6f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -179,6 +179,12 @@ gtag('config', 'G-Y4VBV3J9WD', { 'anonymize_ip': true});
  <span class="menu-text">Validation</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/chapter11-more.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">More resources</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -217,25 +223,17 @@ gtag('config', 'G-Y4VBV3J9WD', { 'anonymize_ip': true});
 
 <p>Communities are groups of nodes that are more densely interconnected with each other than with the rest of the network. To explore the communities in your model, click on <code>Community detection</code> on the left tab.</p>
 <p>You can choose from several algorithms to identify communities within your network. If applicable, you may also set the gamma level to adjust the resolution of detection. Available algorithms:</p>
-<p><code>walktrap</code>: detects communities using short random walks.</p>
-<p><code>fast_greedy</code>: uses modularity optimization to find community structure.</p>
-<p><code>label_prop</code>: applies label propagation to assign nodes to communities.</p>
-<p><code>infomap</code>: identifies communities based on information flow.</p>
-<p><code>edge_betweenness</code>: uses edge betweenness centrality to split the network into communities.</p>
-<p><code>leading_eigen</code>: detects communities using the leading eigenvector of the modularity matrix.</p>
-<p><code>spinglass</code>: based on the spinglass model from statistical physics.</p>
+<ul>
+<li><p><code>walktrap</code>: detects communities using short random walks.</p></li>
+<li><p><code>fast_greedy</code>: uses modularity optimization to find community structure.</p></li>
+<li><p><code>label_prop</code>: applies label propagation to assign nodes to communities.</p></li>
+<li><p><code>infomap</code>: identifies communities based on information flow.</p></li>
+<li><p><code>edge_betweenness</code>: uses edge betweenness centrality to split the network into communities.</p></li>
+<li><p><code>leading_eigen</code>: detects communities using the leading eigenvector of the modularity matrix.</p></li>
+<li><p><code>spinglass</code>: based on the spinglass model from statistical physics.</p></li>
+</ul>
 <p>The number in brackets next to each algorithm indicates the number of communities it detected. In the visualization, communities are represented using distinct node colors.</p>
-<p><img src="vis/fig12.png" class="img-fluid"> Finally, you can adjust the following <strong>Settings</strong> of your network:</p>
-<ol type="1">
-<li><p><code>Cut Value</code>: sets the minimum edge value required for the edge to appear solid (rather than opaque) in the graph.</p></li>
-<li><p><code>Minimum Value</code>: sets the lowest edge value that will be displayed in the graph.</p></li>
-<li><p><code>Edge Label Size</code>: adjusts the font size of edge labels.</p></li>
-<li><p><code>Node Size</code>: controls the visual size of each node.</p></li>
-<li><p><code>Node Label Size</code>: modifies the font size of node labels.</p></li>
-<li><p><code>Layout</code>: Choose between two layout options:</p></li>
-</ol>
-<p><code>Circle</code>: Positions all nodes in a circular formation, or</p>
-<p><mark><code>Spring</code>: <strong>- ?</strong></mark></p>
+<p><img src="vis/fig12.png" class="img-fluid"> Finally, you can adjust the same plot settings as in the Visualization section.</p>
 
 
 

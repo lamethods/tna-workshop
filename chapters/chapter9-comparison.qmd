@@ -1,7 +1,6 @@
 ---
 title: "Comparison"
 format: html
-
 ---
 
 
@@ -25,22 +24,4 @@ The centrality measures table is accompanied by visualizations. You can choose h
 
 To compare two models and determine whether their differences are statistically significant, you can perform a `Permutation test` by checking the corresponding box. This test works by repeatedly shuffling and comparing the data to generate a distribution of differences under the null hypothesis. You can also adjust the number of `Iteratations` to control how many permutations are performed, which affects the accuracy of the resulting significance estimate, and set the [`level` - **is this the level of statistical significance?**]{.mark} of stastical significance that you are interested in. Finally, you can also conduct a [`Paired test` - **is this the parametric test? the network did not change much, when I ran it**]{.mark}. When you run the permutation and statistical tests, the `Mosaic` and `Centralities` tabs are automatically updated to reflect the results.
 ![](vis/fig16.png) 
-
-You can also adjust the following **Settings** in your permutation network:
-
-1. `Cut Value`: sets the minimum edge value required for the edge to appear solid (rather than opaque) in the graph.
-
-2. `Minimum Value`: sets the lowest edge value that will be displayed in the graph.
-
-3. `Edge Label Size`: adjusts the font size of edge labels. 
-
-4. `Node Size`: controls the visual size of each node.
-
-5. `Node Label Size`: modifies the font size of node labels. 
-
-6. `Layout`: Choose between two layout options:
-
-`Circle`: Positions all nodes in a circular formation, or
-
-[`Spring`: **- ?**]{.mark}
-
+Finally, you can adjust the same plot settings as in the Visualization section.

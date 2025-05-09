@@ -6,6 +6,26 @@ format: html
 
 Click on `Centrality Measures`  in the left tab to view key network metrics for each code, including closeness, out-strength centrality, and diffusion.
 
+- *OutStrength*: Total weight of transitions originating from a code.
+
+- *InStrength*: Total weight of transitions directed toward a code.
+
+- *ClosenessIn*: How easily a code can be reached from all others via incoming paths.
+
+- *ClosenessOut*: How easily a code can reach all others via outgoing paths.
+
+- *Closeness*: Average inverse distance from a code to all others (both directions).
+
+- *BetweennessRSP*: How often a code appears on all randomly selected shortest paths.
+
+- *Betweenness*: Frequency with which a code lies on the shortest paths between other codes.
+
+- *Diffusion*: Likelihood that activity or influence spreads through this code.
+
+- *Clustering*: Tendency of a code’s neighbors to be interconnected.
+
+
+
 You can exclude irrelevant centralities by removing their names from the `Centralities` box. To add them back, select from the drop-down list of all available centralities.
 
 To include loops (edges that return to the same code), check the `Loops?` option. 

@@ -1,5 +1,5 @@
 ---
-title: "2. Input Data"
+title: "Input Data"
 format: html
 
 ---
@@ -10,11 +10,11 @@ To upload your data, click on `Input Data` in the tab on the left side. The TNA 
 
 After you have uploaded your data, you will have to select the analysis that you want to perform. Here are your options:
 
-**Relative Analysis**: TNA analysis based on Markov modeling that calculates probabilities of transitions. For this analysis, you need ordered coding of your data, i.e., the order of codes (actions).
+**Relative Analysis**: TNA analysis based on Markov modeling that calculates probabilities of transitions between actions. For this analysis, you need ordered coding of your data, i.e., the order of codes (actions).
 
-**Frequency Analysis**: frequency-based TNA analysis that models frequencies of transitions between codes. Similarly to relative analysis, you need ordered coding of your data, i.e., the order of codes (actions).
+**Frequency Analysis**: Frequency-based TNA analysis that models frequencies of transitions between codes. Similarly to relative analysis, you need ordered coding of your data, i.e., the order of codes (actions).
 
-**Co-occurence Analysis**: co-occurence TNA does not focus on modeling transitions but shows the co-occurrence of codes within one unit of analysis. For this analysis, a binary coding (0-1) of your acions should be sufficient.
+**Co-occurence Analysis**: Co-occurence TNA does not focus on modeling transitions but shows the co-occurrence of codes within one unit of analysis. For this analysis, a binary coding (0-1) of your acions should be sufficient.
 
 Successful analysis will result in a summary document under the data preview that includes
 
@@ -48,7 +48,7 @@ You can choose `Analysis Type` and click on `Analyze`.
 
 ## 2.2 Sequence Data
 
-Selecting `Sequence Data` means that your data is in the sequence or wide format. An example of sequence data can be seen in section 2.1. To upload the data, click on `Browse`. You can upload data in csv, xlsx and R sequence stslist objects.
+Selecting `Sequence Data` means that your data is in the sequence or wide format. An example of sequence data can be seen in section 2.1. To upload the data, click on `Browse`. This type of data is stored in R sequence stslist object (often saved as RDS files).
 
 After successfully uploading your data, you can choose `Analysis Type` and click on `Analyze`.
 
@@ -56,7 +56,7 @@ After successfully uploading your data, you can choose `Analysis Type` and click
 
 ## 2.3 Long Data
 
-Long data refers to datasets in which each variable is represented by a single column. After uploading your long-format data, you need to specify the following variables:
+Long data refers to datasets in which each variable is represented by a single column, as is the case in most event log datasets. After uploading your long-format data, you need to specify the following variables:
 
 `Action`: represents your codes and may include different states, actions, or discourse elements.
 
@@ -66,17 +66,15 @@ Long data refers to datasets in which each variable is represented by a single c
 
 `Order`: indicates the order in which actions take place within one sequence. 
 
-[`Threshold`: **- no idea what it is**]{.mark}
+`Threshold`: when the `Time` variable is provided instead of the `Order` one, if we want to split actions that belong to the same actor but have a large time gap between them, we can establish this time gap using this variable. This is to avoid considering the transitions between two actions that happened too far apart from one another.
 
-[`Date format`: you can specify the date format that you are using in the time variable. **- is it correct?**]{.mark} 
+`Date format`: you can specify the date format that you are using in the time variable if not automatically recognized. However, the app is prepared to handle most typical cases 
 
 After successfully uploading your data, you can choose `Analysis Type`, and click on `Analyze`.
 
 ![](vis/fig5.png)
 
 ## 2.4 Transition Matrix
-
-Use LaTeX to write equations:
 
 After successfully uploading your data, you can choose `Analysis Type` (see section 2.5), and click on `Analyze`.
 

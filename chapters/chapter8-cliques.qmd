@@ -9,21 +9,4 @@ Cliques are subgraphs in which every pair of nodes is directly connected. To fin
 
 ![](vis/fig14.png) 
 
-The clique visualizations can be customized by adjusting the following **Settings**:
-
-1. `Cut Value`: sets the minimum edge value required for the edge to appear solid (rather than opaque) in the graph.
-
-2. `Minimum Value`: sets the lowest edge value that will be displayed in the graph.
-
-3. `Edge Label Size`: adjusts the font size of edge labels. 
-
-4. `Node Size`: controls the visual size of each node.
-
-5. `Node Label Size`: modifies the font size of node labels. 
-
-6. `Layout`: Choose between two layout options:
-
-`Circle`: Positions all nodes in a circular formation, or
-
-[`Spring`: **- ?**]{.mark}
-
+Finally, you can adjust the same plot settings as in the Visualization section.

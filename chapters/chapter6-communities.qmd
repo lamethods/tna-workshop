@@ -8,38 +8,21 @@ Communities are groups of nodes that are more densely interconnected with each o
 
 You can choose from several algorithms to identify communities within your network. If applicable, you may also set the gamma level to adjust the resolution of detection. Available algorithms:
  
-`walktrap`: detects communities using short random walks.
+- `walktrap`: detects communities using short random walks.
 
-`fast_greedy`: uses modularity optimization to find community structure.
+- `fast_greedy`: uses modularity optimization to find community structure.
 
-`label_prop`: applies label propagation to assign nodes to communities.
+- `label_prop`: applies label propagation to assign nodes to communities.
 
-`infomap`: identifies communities based on information flow.
+- `infomap`: identifies communities based on information flow.
 
-`edge_betweenness`: uses edge betweenness centrality to split the network into communities.
+- `edge_betweenness`: uses edge betweenness centrality to split the network into communities.
 
-`leading_eigen`: detects communities using the leading eigenvector of the modularity matrix.
+- `leading_eigen`: detects communities using the leading eigenvector of the modularity matrix.
 
-`spinglass`: based on the spinglass model from statistical physics.
+- `spinglass`: based on the spinglass model from statistical physics.
 
 The number in brackets next to each algorithm indicates the number of communities it detected. In the visualization, communities are represented using distinct node colors.
 
 ![](vis/fig12.png) 
-Finally, you can adjust the following **Settings** of your network:
-
-1. `Cut Value`: sets the minimum edge value required for the edge to appear solid (rather than opaque) in the graph.
-
-2. `Minimum Value`: sets the lowest edge value that will be displayed in the graph.
-
-3. `Edge Label Size`: adjusts the font size of edge labels. 
-
-4. `Node Size`: controls the visual size of each node.
-
-5. `Node Label Size`: modifies the font size of node labels. 
-
-6. `Layout`: Choose between two layout options:
-
-`Circle`: Positions all nodes in a circular formation, or
-
-[`Spring`: **- ?**]{.mark}
-
+Finally, you can adjust the same plot settings as in the Visualization section.

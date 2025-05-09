@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Cliques – TNA workshop</title>
+<title>More resources – TNA workshop</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,18 +77,12 @@ gtag('config', 'G-Y4VBV3J9WD', { 'anonymize_ip': true});
 </script>
 
 
-<meta property="og:title" content="Cliques – TNA workshop">
+<meta property="og:title" content="More resources – TNA workshop">
 <meta property="og:description" content="">
-<meta property="og:image" content="https://lamethods.github.io/tna-workshop/chapters/vis/fig14.png">
 <meta property="og:site_name" content="TNA workshop">
-<meta property="og:image:height" content="948">
-<meta property="og:image:width" content="1693">
-<meta name="twitter:title" content="Cliques – TNA workshop">
+<meta name="twitter:title" content="More resources – TNA workshop">
 <meta name="twitter:description" content="">
-<meta name="twitter:image" content="https://lamethods.github.io/tna-workshop/chapters/vis/fig14.png">
-<meta name="twitter:image-height" content="948">
-<meta name="twitter:image-width" content="1693">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
 </head>
 
 <body class="nav-sidebar floating fullcontent">
@@ -100,7 +94,7 @@ gtag('config', 'G-Y4VBV3J9WD', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/chapter8-cliques.html">Cliques</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/chapter11-more.html">More resources</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -163,7 +157,7 @@ gtag('config', 'G-Y4VBV3J9WD', { 'anonymize_ip': true});
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/chapter8-cliques.html" class="sidebar-item-text sidebar-link active">
+  <a href="../chapters/chapter8-cliques.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Cliques</span></a>
   </div>
 </li>
@@ -181,7 +175,7 @@ gtag('config', 'G-Y4VBV3J9WD', { 'anonymize_ip': true});
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/chapter11-more.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/chapter11-more.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">More resources</span></a>
   </div>
 </li>
@@ -196,7 +190,7 @@ gtag('config', 'G-Y4VBV3J9WD', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Cliques</h1>
+<h1 class="title">More resources</h1>
 </div>
 
 
@@ -221,9 +215,22 @@ gtag('config', 'G-Y4VBV3J9WD', { 'anonymize_ip': true});
 </header>
 
 
-<p>Cliques are subgraphs in which every pair of nodes is directly connected. To find cliques in your network, click on <code>Cliques</code> in the left tab. Then, set the <code>Clique Size (n)</code> to define how many interconnected nodes each clique should contain. You can also adjust the <code>Threshold</code> parameter to include only edges with weights above a specified value. Once your parameters are set, click <code>Find Cliques</code>. A detected clique will appear under <code>Cliques Found</code>. To view other identified cliques, open the dropdown menu labeled <code>Choose Clique</code> and select the one you want to explore.</p>
-<p><img src="vis/fig14.png" class="img-fluid"></p>
-<p>Finally, you can adjust the same plot settings as in the Visualization section.</p>
+<p>TNA has been presented for the first time at the Learning Analytics &amp; Knowledge conference (LAK) 2025.</p>
+<ul>
+<li>Mohammed Saqr, Sonsoles López-Pernas, Tiina Törmänen, Rogers Kaliisa, Kamila Misiejuk, and Santtu Tikka. 2025. Transition Network Analysis: A Novel Framework for Modeling, Visualizing, and Identifying the Temporal Patterns of Learners and Learning Processes. In Proceedings of the 15th International Learning Analytics and Knowledge Conference (LAK ’25). Association for Computing Machinery, New York, NY, USA, 351–361. <a href="https://doi.org/10.1145/3706468.3706513" class="uri">https://doi.org/10.1145/3706468.3706513</a></li>
+</ul>
+<p>TNA can be implemented using the R package of the same name, available on CRAN:</p>
+<ul>
+<li>Mohammed Saqr, Santu Tikka, Sonsoles López-Pernas (2024). <em>tna: An R package for Transition Network Analysis</em>. R package version 0.4.0, <a href="https://github.com/sonsoleslp/tna" class="uri">https://github.com/sonsoleslp/tna</a>.</li>
+</ul>
+<p>The reference manual is available in <a href="https://sonsoles.me/tna" class="uri">https://sonsoles.me/tna</a></p>
+<p>There are three R tutorials available about TNA:</p>
+<ul>
+<li><strong>Basic tutorial</strong>: Mohammed Saqr, Sonsoles López-Pernas, Santtu Tikka (2025). <em>Mapping Relational Dynamics with Transition Network Analysis: A Primer and Tutorial</em>. In M. Saqr &amp; S. López-Pernas (Eds.), Advanced Learning Analytics Methods: AI, Precision and Complexity (in – press). Springer. <a href="https://lamethods.org/book2/chapters/ch15-tna/ch15-tna.html" class="uri">https://lamethods.org/book2/chapters/ch15-tna/ch15-tna.html</a></li>
+<li><strong>Frequency-based TNA</strong>: Mohammed Saqr, Sonsoles López-Pernas, Santtu Tikka (2025). <em>Capturing The Breadth and Dynamics of the Temporal Processes with Frequency Transition Network Analysis: A Primer and Tutorial</em>. In M. Saqr &amp; S. López-Pernas (Eds.), Advanced Learning Analytics Methods: AI, Precision and Complexity (in – press). Springer. <a href="https://lamethods.org/book2/chapters/ch16-ftna/ch16-ftna.html" class="uri">https://lamethods.org/book2/chapters/ch16-ftna/ch16-ftna.html</a></li>
+<li><strong>Clustering</strong>: Sonsoles López-Pernas, Santtu Tikka, Mohammed Saqr (2025). <em>Mining Patterns and Clusters with Transition Network Analysis: A Heterogeneity Approach</em>. In M. Saqr &amp; S. López-Pernas (Eds.), Advanced Learning Analytics Methods: AI, Precision and Complexity (in – press). Springer. <a href="https://lamethods.org/book2/chapters/ch17-tna-clusters/ch17-tna-clusters.html" class="uri">https://lamethods.org/book2/chapters/ch17-tna-clusters/ch17-tna-clusters.html</a></li>
+</ul>
+<p>Stay tuned to find out all new developments!</p>
 
 
 

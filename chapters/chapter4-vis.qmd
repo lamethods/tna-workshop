@@ -1,10 +1,9 @@
 ---
 title: "Visualization"
 format: html
-
 ---
 
-
+Since all the three analysis methods result into some type of matrix, we can represent them as a network where the nodes (circles) are the actions/codes and the edges (arrows) are the transitions between them (in the case of relative and frequency analysis) or co-occurrence (in the case of the analysis of the same name).
 
 You can find your network visualization under `Visualization` on the left tab.
 
@@ -12,7 +11,7 @@ You can find your network visualization under `Visualization` on the left tab.
 
 To explore your network, you can adjust the following **Settings**:
 
-1. `Cut Value`: sets the minimum edge value required for the edge to appear solid (rather than opaque) in the graph.
+1. `Cut Value`: sets the minimum edge value required for the edge to appear solid (rather than faded) in the graph.
 
 2. `Minimum Value`: sets the lowest edge value that will be displayed in the graph.
 
@@ -26,7 +25,8 @@ To explore your network, you can adjust the following **Settings**:
 
 `Circle`: Positions all nodes in a circular formation, or
 
-[`Spring`: **- how is it determined? based on values and centrality?**]{.mark}
+`Spring`: Positions all nodes based on an algorithm that simulates a force-directed representation of the network treating edges as springs holding nodes close, while treating nodes as repelling objects.
+
 
 ![](vis/fig10.png){width=70%} 
 

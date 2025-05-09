@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2. Input Data – TNA workshop</title>
+<title>Input Data – TNA workshop</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -38,7 +38,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-b6ab77e64108811dad6229af30134f6f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -77,13 +77,13 @@ gtag('config', 'G-Y4VBV3J9WD', { 'anonymize_ip': true});
 </script>
 
 
-<meta property="og:title" content="2. Input Data – TNA workshop">
+<meta property="og:title" content="Input Data – TNA workshop">
 <meta property="og:description" content="">
 <meta property="og:image" content="https://lamethods.github.io/tna-workshop/chapters/vis/fig2.png">
 <meta property="og:site_name" content="TNA workshop">
 <meta property="og:image:height" content="560">
 <meta property="og:image:width" content="1417">
-<meta name="twitter:title" content="2. Input Data – TNA workshop">
+<meta name="twitter:title" content="Input Data – TNA workshop">
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content="https://lamethods.github.io/tna-workshop/chapters/vis/fig2.png">
 <meta name="twitter:image-height" content="560">
@@ -179,6 +179,12 @@ gtag('config', 'G-Y4VBV3J9WD', { 'anonymize_ip': true});
  <span class="menu-text">Validation</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/chapter11-more.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">More resources</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -190,7 +196,7 @@ gtag('config', 'G-Y4VBV3J9WD', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">2. Input Data</h1>
+<h1 class="title">Input Data</h1>
 </div>
 
 
@@ -218,9 +224,9 @@ gtag('config', 'G-Y4VBV3J9WD', { 'anonymize_ip': true});
 <p>To upload your data, click on <code>Input Data</code> in the tab on the left side. The TNA app supports multiple data types for upload, including <strong>Sequence Data</strong> (see section 2.2), <strong>Long Data</strong> (see section 2.3), and <strong>Transition Matrices</strong> (see section 2.4). Additionally, users can explore the app using built-in <strong>Sample Data</strong> (see section 2.1). You can find your options under <code>Data Input</code>.</p>
 <p><img src="vis/fig2.png" class="img-fluid"></p>
 <p>After you have uploaded your data, you will have to select the analysis that you want to perform. Here are your options:</p>
-<p><strong>Relative Analysis</strong>: TNA analysis based on Markov modeling that calculates probabilities of transitions. For this analysis, you need ordered coding of your data, i.e., the order of codes (actions).</p>
-<p><strong>Frequency Analysis</strong>: frequency-based TNA analysis that models frequencies of transitions between codes. Similarly to relative analysis, you need ordered coding of your data, i.e., the order of codes (actions).</p>
-<p><strong>Co-occurence Analysis</strong>: co-occurence TNA does not focus on modeling transitions but shows the co-occurrence of codes within one unit of analysis. For this analysis, a binary coding (0-1) of your acions should be sufficient.</p>
+<p><strong>Relative Analysis</strong>: TNA analysis based on Markov modeling that calculates probabilities of transitions between actions. For this analysis, you need ordered coding of your data, i.e., the order of codes (actions).</p>
+<p><strong>Frequency Analysis</strong>: Frequency-based TNA analysis that models frequencies of transitions between codes. Similarly to relative analysis, you need ordered coding of your data, i.e., the order of codes (actions).</p>
+<p><strong>Co-occurence Analysis</strong>: Co-occurence TNA does not focus on modeling transitions but shows the co-occurrence of codes within one unit of analysis. For this analysis, a binary coding (0-1) of your acions should be sufficient.</p>
 <p>Successful analysis will result in a summary document under the data preview that includes</p>
 <p><code>State Labels</code>: the list of all codes that are included in the analysis</p>
 <p><code>Transition Probability Matrix</code>: if you selected <strong>relative</strong> analysis, you will see a matrix showing the transition probabilities between codes.</p>
@@ -240,25 +246,24 @@ gtag('config', 'G-Y4VBV3J9WD', { 'anonymize_ip': true});
 </section>
 <section id="sequence-data" class="level2">
 <h2 class="anchored" data-anchor-id="sequence-data">2.2 Sequence Data</h2>
-<p>Selecting <code>Sequence Data</code> means that your data is in the sequence or wide format. An example of sequence data can be seen in section 2.1. To upload the data, click on <code>Browse</code>. You can upload data in csv, xlsx and R sequence stslist objects.</p>
+<p>Selecting <code>Sequence Data</code> means that your data is in the sequence or wide format. An example of sequence data can be seen in section 2.1. To upload the data, click on <code>Browse</code>. This type of data is stored in R sequence stslist object (often saved as RDS files).</p>
 <p>After successfully uploading your data, you can choose <code>Analysis Type</code> and click on <code>Analyze</code>.</p>
 <p><img src="vis/fig4.png" class="img-fluid" style="width:70.0%"></p>
 </section>
 <section id="long-data" class="level2">
 <h2 class="anchored" data-anchor-id="long-data">2.3 Long Data</h2>
-<p>Long data refers to datasets in which each variable is represented by a single column. After uploading your long-format data, you need to specify the following variables:</p>
+<p>Long data refers to datasets in which each variable is represented by a single column, as is the case in most event log datasets. After uploading your long-format data, you need to specify the following variables:</p>
 <p><code>Action</code>: represents your codes and may include different states, actions, or discourse elements.</p>
 <p><code>Actor</code>: denotes the unit of analysis, which could be a student, a group, or a phase within an activity.</p>
 <p><code>Time</code>: refers to the chronological order of actions, which can be represented using timestamps or uniquely ordered identifiers.</p>
 <p><code>Order</code>: indicates the order in which actions take place within one sequence.</p>
-<p><mark><code>Threshold</code>: <strong>- no idea what it is</strong></mark></p>
-<p><mark><code>Date format</code>: you can specify the date format that you are using in the time variable. <strong>- is it correct?</strong></mark></p>
+<p><code>Threshold</code>: when the <code>Time</code> variable is provided instead of the <code>Order</code> one, if we want to split actions that belong to the same actor but have a large time gap between them, we can establish this time gap using this variable. This is to avoid considering the transitions between two actions that happened too far apart from one another.</p>
+<p><code>Date format</code>: you can specify the date format that you are using in the time variable if not automatically recognized. However, the app is prepared to handle most typical cases</p>
 <p>After successfully uploading your data, you can choose <code>Analysis Type</code>, and click on <code>Analyze</code>.</p>
 <p><img src="vis/fig5.png" class="img-fluid"></p>
 </section>
 <section id="transition-matrix" class="level2">
 <h2 class="anchored" data-anchor-id="transition-matrix">2.4 Transition Matrix</h2>
-<p>Use LaTeX to write equations:</p>
 <p>After successfully uploading your data, you can choose <code>Analysis Type</code> (see section 2.5), and click on <code>Analyze</code>.</p>
 <p><img src="vis/fig6.png" class="img-fluid"></p>
 

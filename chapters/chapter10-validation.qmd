@@ -5,24 +5,8 @@ format: html
 ---
 
 
-To validate edge weight accuracy and overall model stability, you can perform bootstrapping by selecting `Validation` from the left-hand tab. Bootstrapping involves repeatedly resampling the original data with replacement to generate new datasets, where some data points may appear multiple times while others may be excluded. You can adjust the number of `Iterations`, select [`level` - **is this the level of statistical significance?**]{.mark}, and choose between two bootstrapping methods: `stability` or `threshold`. Additionally, you can define the `Consistency range`, which sets the lower and upper bounds of the bootstrap confidence intervals for transitions. Once all parameters are set, click `Bootstrap.` In the resulting network visualization, stable connections will appear in blue, while removed or unstable connections will be shown in red.
+To validate edge weight accuracy and overall model stability, you can perform bootstrapping by selecting `Validation` from the left-hand tab. Bootstrapping involves repeatedly resampling the original data with replacement to generate new datasets, where some data points may appear multiple times while others may be excluded. You can adjust the number of `Iterations`, select the significance `level` (\alpha), and choose between two bootstrapping methods: `stability` or `threshold`. Additionally, you can define the `Consistency range`, which sets the lower and upper bounds of the bootstrap confidence intervals for transitions. Once all parameters are set, click `Bootstrap.` In the resulting network visualization, stable connections will appear in blue, while removed or unstable connections will be shown in red.
 
 ![](vis/fig17.png) 
 
-You can also adjust the following **Settings** in your bootstrapped model:
-
-1. `Cut Value`: sets the minimum edge value required for the edge to appear solid (rather than opaque) in the graph.
-
-2. `Minimum Value`: sets the lowest edge value that will be displayed in the graph.
-
-3. `Edge Label Size`: adjusts the font size of edge labels. 
-
-4. `Node Size`: controls the visual size of each node.
-
-5. `Node Label Size`: modifies the font size of node labels. 
-
-6. `Layout`: Choose between two layout options:
-
-`Circle`: Positions all nodes in a circular formation, or
-
-[`Spring`: **- ?**]{.mark}
+Finally, you can adjust the same plot settings as in the Visualization section.

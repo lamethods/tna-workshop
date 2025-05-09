@@ -38,7 +38,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-b6ab77e64108811dad6229af30134f6f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -179,6 +179,12 @@ gtag('config', 'G-Y4VBV3J9WD', { 'anonymize_ip': true});
  <span class="menu-text">Validation</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/chapter11-more.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">More resources</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -216,6 +222,17 @@ gtag('config', 'G-Y4VBV3J9WD', { 'anonymize_ip': true});
 
 
 <p>Click on <code>Centrality Measures</code> in the left tab to view key network metrics for each code, including closeness, out-strength centrality, and diffusion.</p>
+<ul>
+<li><p><em>OutStrength</em>: Total weight of transitions originating from a code.</p></li>
+<li><p><em>InStrength</em>: Total weight of transitions directed toward a code.</p></li>
+<li><p><em>ClosenessIn</em>: How easily a code can be reached from all others via incoming paths.</p></li>
+<li><p><em>ClosenessOut</em>: How easily a code can reach all others via outgoing paths.</p></li>
+<li><p><em>Closeness</em>: Average inverse distance from a code to all others (both directions).</p></li>
+<li><p><em>BetweennessRSP</em>: How often a code appears on all randomly selected shortest paths.</p></li>
+<li><p><em>Betweenness</em>: Frequency with which a code lies on the shortest paths between other codes.</p></li>
+<li><p><em>Diffusion</em>: Likelihood that activity or influence spreads through this code.</p></li>
+<li><p><em>Clustering</em>: Tendency of a code’s neighbors to be interconnected.</p></li>
+</ul>
 <p>You can exclude irrelevant centralities by removing their names from the <code>Centralities</code> box. To add them back, select from the drop-down list of all available centralities.</p>
 <p>To include loops (edges that return to the same code), check the <code>Loops?</code> option.</p>
 <p>If you need calculations based on normalized values, check the <code>Normalize?</code> box.</p>

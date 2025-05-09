@@ -36,6 +36,8 @@ website:
         href: "chapters/chapter9-comparison.qmd"
       - text: "Validation"
         href: "chapters/chapter10-validation.qmd"
+      - text: "More resources"
+        href: "chapters/chapter11-more.qmd"
 
 resources:
   - CNAME

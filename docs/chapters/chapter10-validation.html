@@ -38,7 +38,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-b6ab77e64108811dad6229af30134f6f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -179,6 +179,12 @@ gtag('config', 'G-Y4VBV3J9WD', { 'anonymize_ip': true});
  <span class="menu-text">Validation</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/chapter11-more.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">More resources</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -215,19 +221,9 @@ gtag('config', 'G-Y4VBV3J9WD', { 'anonymize_ip': true});
 </header>
 
 
-<p>To validate edge weight accuracy and overall model stability, you can perform bootstrapping by selecting <code>Validation</code> from the left-hand tab. Bootstrapping involves repeatedly resampling the original data with replacement to generate new datasets, where some data points may appear multiple times while others may be excluded. You can adjust the number of <code>Iterations</code>, select <mark><code>level</code> - <strong>is this the level of statistical significance?</strong></mark>, and choose between two bootstrapping methods: <code>stability</code> or <code>threshold</code>. Additionally, you can define the <code>Consistency range</code>, which sets the lower and upper bounds of the bootstrap confidence intervals for transitions. Once all parameters are set, click <code>Bootstrap.</code> In the resulting network visualization, stable connections will appear in blue, while removed or unstable connections will be shown in red.</p>
+<p>To validate edge weight accuracy and overall model stability, you can perform bootstrapping by selecting <code>Validation</code> from the left-hand tab. Bootstrapping involves repeatedly resampling the original data with replacement to generate new datasets, where some data points may appear multiple times while others may be excluded. You can adjust the number of <code>Iterations</code>, select the significance <code>level</code> (), and choose between two bootstrapping methods: <code>stability</code> or <code>threshold</code>. Additionally, you can define the <code>Consistency range</code>, which sets the lower and upper bounds of the bootstrap confidence intervals for transitions. Once all parameters are set, click <code>Bootstrap.</code> In the resulting network visualization, stable connections will appear in blue, while removed or unstable connections will be shown in red.</p>
 <p><img src="vis/fig17.png" class="img-fluid"></p>
-<p>You can also adjust the following <strong>Settings</strong> in your bootstrapped model:</p>
-<ol type="1">
-<li><p><code>Cut Value</code>: sets the minimum edge value required for the edge to appear solid (rather than opaque) in the graph.</p></li>
-<li><p><code>Minimum Value</code>: sets the lowest edge value that will be displayed in the graph.</p></li>
-<li><p><code>Edge Label Size</code>: adjusts the font size of edge labels.</p></li>
-<li><p><code>Node Size</code>: controls the visual size of each node.</p></li>
-<li><p><code>Node Label Size</code>: modifies the font size of node labels.</p></li>
-<li><p><code>Layout</code>: Choose between two layout options:</p></li>
-</ol>
-<p><code>Circle</code>: Positions all nodes in a circular formation, or</p>
-<p><mark><code>Spring</code>: <strong>- ?</strong></mark></p>
+<p>Finally, you can adjust the same plot settings as in the Visualization section.</p>
 
 
 
