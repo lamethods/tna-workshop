@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: docs
+format:
+  html:
+    theme: cosmo
+author:   
+  - Kamila Misiejuk 
+  - Sonsoles López-Pernas
+  - Mohammed Saqr
+website:
+  title: "TNA workshop"
+  repo-url: https://github.com/lamethods/tna-workshop/
+  twitter-card: true
+  site-url: https://lamethods.github.io/tna-workshop
+  open-graph: true
+  sidebar:
+    contents:
+      - text: "Intro"
+        href: "chapters/chapter1-intro.qmd"
+      - text: "Data"
+        href: "chapters/chapter2-data.qmd"
+      - text: "Summary"
+        href: "chapters/chapter3-summary.qmd"
+      - text: "Visualization"
+        href: "chapters/chapter4-vis.qmd"
+      - text: "Centralities"
+        href: "chapters/chapter5-centralities.qmd"
+      - text: "Communities"
+        href: "chapters/chapter6-communities.qmd"
+      - text: "Cliques"
+        href: "chapters/chapter8-cliques.qmd"
+      - text: "Comparison"
+        href: "chapters/chapter9-comparison.qmd"
+      - text: "Validation"
+        href: "chapters/chapter10-validation.qmd"
+
+resources:
+  - CNAME

@@ -1,0 +1,83 @@
+---
+title: "2. Input Data"
+format: html
+
+---
+
+To upload your data, click on `Input Data` in the tab on the left side. The TNA app supports multiple data types for upload, including **Sequence Data** (see section 2.2), **Long Data** (see section 2.3), and **Transition Matrices** (see section 2.4). Additionally, users can explore the app using built-in **Sample Data** (see section 2.1). You can find your options under `Data Input`.
+
+![](vis/fig2.png)
+
+After you have uploaded your data, you will have to select the analysis that you want to perform. Here are your options:
+
+**Relative Analysis**: TNA analysis based on Markov modeling that calculates probabilities of transitions. For this analysis, you need ordered coding of your data, i.e., the order of codes (actions).
+
+**Frequency Analysis**: frequency-based TNA analysis that models frequencies of transitions between codes. Similarly to relative analysis, you need ordered coding of your data, i.e., the order of codes (actions).
+
+**Co-occurence Analysis**: co-occurence TNA does not focus on modeling transitions but shows the co-occurrence of codes within one unit of analysis. For this analysis, a binary coding (0-1) of your acions should be sufficient.
+
+Successful analysis will result in a summary document under the data preview that includes
+
+`State Labels`: the list of all codes that are included in the analysis
+
+`Transition Probability Matrix`: if you selected **relative** analysis, you will see a matrix showing the transition probabilities between codes. 
+
+`Transition Frequency Matrix`: if you selected **frequency** analysis, you will see a matrix showing the transition frequencies between codes. 
+
+`Co-occurence Matrix`: if you selected **co-occurence** analysis, you will see a matrix of code co-occurence within one unit.
+
+`Initial Probabilities`: this metrics indicates the probability of a code to be the first code in the sequence.
+
+![](vis/fig7.png)
+
+## 2.1 Sample Data
+
+If you don't have your own data, you can select `Sample Data`. This dataset has 2,000 entries and is formatted as a sequence data.
+
+`Codes`: the codes (e.g., *monitor*, *emotion*) represent different stages of a problem-solving process. 
+
+`1`: the column names represent the sequence in which the codes appear.
+
+`2`: the rows represent units of analysis in which the codes appear. 
+
+As it is sample data, there is no information about the context  of the data collection. As such, the rows could represent different units of analysis, e.g., an utterance, an activity or a paragraph, depending on the research settings. For instance, in **row 5**, **discuss** was the first code detected, followed by **emotion** and, finally, **cohesion**.
+
+You can choose `Analysis Type` and click on `Analyze`.
+
+![](vis/fig3.png)
+
+## 2.2 Sequence Data
+
+Selecting `Sequence Data` means that your data is in the sequence or wide format. An example of sequence data can be seen in section 2.1. To upload the data, click on `Browse`. You can upload data in csv, xlsx and R sequence stslist objects.
+
+After successfully uploading your data, you can choose `Analysis Type` and click on `Analyze`.
+
+![](vis/fig4.png){width=70%} 
+
+## 2.3 Long Data
+
+Long data refers to datasets in which each variable is represented by a single column. After uploading your long-format data, you need to specify the following variables:
+
+`Action`: represents your codes and may include different states, actions, or discourse elements.
+
+`Actor`: denotes the unit of analysis, which could be a student, a group, or a phase within an activity.
+
+`Time`: refers to the chronological order of actions, which can be represented using timestamps or uniquely ordered identifiers.
+
+`Order`: indicates the order in which actions take place within one sequence. 
+
+[`Threshold`: **- no idea what it is**]{.mark}
+
+[`Date format`: you can specify the date format that you are using in the time variable. **- is it correct?**]{.mark} 
+
+After successfully uploading your data, you can choose `Analysis Type`, and click on `Analyze`.
+
+![](vis/fig5.png)
+
+## 2.4 Transition Matrix
+
+Use LaTeX to write equations:
+
+After successfully uploading your data, you can choose `Analysis Type` (see section 2.5), and click on `Analyze`.
+
+![](vis/fig6.png)

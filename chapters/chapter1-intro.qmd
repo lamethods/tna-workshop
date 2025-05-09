@@ -1,0 +1,12 @@
+---
+title: "Intro"
+format: html
+---
+
+## 1. Transition Network Analysis (TNA) app
+
+This tutorial demonstrates the functionalities of the Transition Network Analysis (TNA) Shiny app developed by Sonsoles López-Pernas: [https://sonsoleslp.shinyapps.io/tna-app/](https://sonsoleslp.shinyapps.io/tna-app/).
+
+This tutorial uses Sample Data, provided within the TNA app, to showcase the app (see section 2.1).
+
+![](vis/fig1.png)

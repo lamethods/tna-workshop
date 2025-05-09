@@ -1,0 +1,29 @@
+---
+title: "Cliques"
+format: html
+
+---
+
+
+Cliques are subgraphs in which every pair of nodes is directly connected. To find cliques in your network, click on `Cliques` in the left tab. Then, set the `Clique Size (n)` to define how many interconnected nodes each clique should contain. You can also adjust the `Threshold` parameter to include only edges with weights above a specified value. Once your parameters are set, click `Find Cliques`. A detected clique will appear under `Cliques Found`. To view other identified cliques, open the dropdown menu labeled `Choose Clique` and select the one you want to explore.
+
+![](vis/fig14.png) 
+
+The clique visualizations can be customized by adjusting the following **Settings**:
+
+1. `Cut Value`: sets the minimum edge value required for the edge to appear solid (rather than opaque) in the graph.
+
+2. `Minimum Value`: sets the lowest edge value that will be displayed in the graph.
+
+3. `Edge Label Size`: adjusts the font size of edge labels. 
+
+4. `Node Size`: controls the visual size of each node.
+
+5. `Node Label Size`: modifies the font size of node labels. 
+
+6. `Layout`: Choose between two layout options:
+
+`Circle`: Positions all nodes in a circular formation, or
+
+[`Spring`: **- ?**]{.mark}
+

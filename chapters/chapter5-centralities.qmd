@@ -1,0 +1,17 @@
+---
+title: "Centrality measures"
+format: html
+
+---
+
+Click on `Centrality Measures`  in the left tab to view key network metrics for each code, including closeness, out-strength centrality, and diffusion.
+
+You can exclude irrelevant centralities by removing their names from the `Centralities` box. To add them back, select from the drop-down list of all available centralities.
+
+To include loops (edges that return to the same code), check the `Loops?` option. 
+
+If you need calculations based on normalized values, check the `Normalize?` box.
+
+The centrality measures table is accompanied by visualizations. You can choose how many columns to use when displaying these visualizations by selecting the correct number in `Columns`.
+
+![](vis/fig11.png) 

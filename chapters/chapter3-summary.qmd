@@ -1,0 +1,21 @@
+---
+title: "3. Summary results"
+format: html
+
+---
+
+By selecting `Summary results` in the left tab, you will access three tables:
+
+1. `Summary Statistics`: that shows your overall network metrics, such as node count, mean distance, or reciprocity. The values will vary depending on the analysis that you have selected. 
+
+2. `Initial Probabilities`: this metrics indicates the probability of a code to be the first code in the sequence.
+
+3. `Transition Matrix`: Depending on the analysis that you are performing, one of the following matrices will be displayed:
+
+If you selected **relative** analysis, you will see a **Transition Probability Matrix**, showing the transition probabilities between codes. 
+
+If you selected **frequency** analysis, you will see a **Transition Frequency Matrix** showing the transition frequencies between codes. 
+
+If you selected **co-occurence** analysis, you will see a **Co-occurence Matrix** of code co-occurence within one unit.
+
+![](vis/fig8.png)
