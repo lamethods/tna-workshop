@@ -16,11 +16,11 @@ jobs:
           r-version: '4.4.1' # The R version to download (if necessary) and use.
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: "1.6.40"
 
       - name: Render Quarto project
-        run: |
-          quarto clean
-          quarto render
+        run: quarto render .
 
       - name: Commit files
         run: |
