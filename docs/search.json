@@ -1,5 +1,45 @@
 [
   {
+    "objectID": "chapters/chapter5-centralities.html",
+    "href": "chapters/chapter5-centralities.html",
+    "title": "Centrality measures",
+    "section": "",
+    "text": "Click on Centrality Measures in the left tab to view key network metrics for each code, including closeness, out-strength centrality, and diffusion.\nYou can exclude irrelevant centralities by removing their names from the Centralities box. To add them back, select from the drop-down list of all available centralities.\nTo include loops (edges that return to the same code), check the Loops? option.\nIf you need calculations based on normalized values, check the Normalize? box.\nThe centrality measures table is accompanied by visualizations. You can choose how many columns to use when displaying these visualizations by selecting the correct number in Columns.",
+    "crumbs": [
+      "Centralities"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter9-comparison.html",
+    "href": "chapters/chapter9-comparison.html",
+    "title": "Comparison",
+    "section": "",
+    "text": "To compare networks of different groups or settings, click on Comparison on the left tab.\nDepending on your dataset you can choose different comparison groups by selecting the relevant variable from Choose grouping column. If you have more than two groups, you select them in dropdown menus of Choose group 1 and Choose group 2.\nThe Difference Network will show the difference in edge strength by subtracting the velus from group 2 from group 1. You can also access other metrics regarding group comparison.\nBy clicking on Mosaic, you can see the mosaic plot of code frequency with statistical significance of the differences.\nCentralities show the centralities measures of each code divided by group. Here you can exclude irrelevant centralities by removing their names from the Centralities box. To add them back, select from the drop-down list of all available centralities.\nTo include loops (edges that return to the same code), check the Loops? option.\nIf you need calculations based on normalized values, check the Normalize? box.\nThe centrality measures table is accompanied by visualizations. You can choose how many columns to use when displaying these visualizations by selecting the correct number in Columns.\n\nTo compare two models and determine whether their differences are statistically significant, you can perform a Permutation test by checking the corresponding box. This test works by repeatedly shuffling and comparing the data to generate a distribution of differences under the null hypothesis. You can also adjust the number of Iteratations to control how many permutations are performed, which affects the accuracy of the resulting significance estimate, and set the level - is this the level of statistical significance? of stastical significance that you are interested in. Finally, you can also conduct a Paired test - is this the parametric test? the network did not change much, when I ran it. When you run the permutation and statistical tests, the Mosaic and Centralities tabs are automatically updated to reflect the results. \nYou can also adjust the following Settings in your permutation network:\n\nCut Value: sets the minimum edge value required for the edge to appear solid (rather than opaque) in the graph.\nMinimum Value: sets the lowest edge value that will be displayed in the graph.\nEdge Label Size: adjusts the font size of edge labels.\nNode Size: controls the visual size of each node.\nNode Label Size: modifies the font size of node labels.\nLayout: Choose between two layout options:\n\nCircle: Positions all nodes in a circular formation, or\nSpring: - ?",
+    "crumbs": [
+      "Comparison"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter4-vis.html",
+    "href": "chapters/chapter4-vis.html",
+    "title": "Visualization",
+    "section": "",
+    "text": "You can find your network visualization under Visualization on the left tab.\n\nTo explore your network, you can adjust the following Settings:\n\nCut Value: sets the minimum edge value required for the edge to appear solid (rather than opaque) in the graph.\nMinimum Value: sets the lowest edge value that will be displayed in the graph.\nEdge Label Size: adjusts the font size of edge labels.\nNode Size: controls the visual size of each node.\nNode Label Size: modifies the font size of node labels.\nLayout: Choose between two layout options:\n\nCircle: Positions all nodes in a circular formation, or\nSpring: - how is it determined? based on values and centrality?",
+    "crumbs": [
+      "Visualization"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter10-validation.html",
+    "href": "chapters/chapter10-validation.html",
+    "title": "Validation",
+    "section": "",
+    "text": "To validate edge weight accuracy and overall model stability, you can perform bootstrapping by selecting Validation from the left-hand tab. Bootstrapping involves repeatedly resampling the original data with replacement to generate new datasets, where some data points may appear multiple times while others may be excluded. You can adjust the number of Iterations, select level - is this the level of statistical significance?, and choose between two bootstrapping methods: stability or threshold. Additionally, you can define the Consistency range, which sets the lower and upper bounds of the bootstrap confidence intervals for transitions. Once all parameters are set, click Bootstrap. In the resulting network visualization, stable connections will appear in blue, while removed or unstable connections will be shown in red.\n\nYou can also adjust the following Settings in your bootstrapped model:\n\nCut Value: sets the minimum edge value required for the edge to appear solid (rather than opaque) in the graph.\nMinimum Value: sets the lowest edge value that will be displayed in the graph.\nEdge Label Size: adjusts the font size of edge labels.\nNode Size: controls the visual size of each node.\nNode Label Size: modifies the font size of node labels.\nLayout: Choose between two layout options:\n\nCircle: Positions all nodes in a circular formation, or\nSpring: - ?",
+    "crumbs": [
+      "Validation"
+    ]
+  },
+  {
     "objectID": "chapters/chapter8-cliques.html",
     "href": "chapters/chapter8-cliques.html",
     "title": "Cliques",
@@ -10,13 +50,13 @@
     ]
   },
   {
-    "objectID": "chapters/chapter5-centralities.html",
-    "href": "chapters/chapter5-centralities.html",
-    "title": "Centrality measures",
+    "objectID": "chapters/chapter6-communities.html",
+    "href": "chapters/chapter6-communities.html",
+    "title": "Community Detection",
     "section": "",
-    "text": "Click on Centrality Measures in the left tab to view key network metrics for each code, including closeness, out-strength centrality, and diffusion.\nYou can exclude irrelevant centralities by removing their names from the Centralities box. To add them back, select from the drop-down list of all available centralities.\nTo include loops (edges that return to the same code), check the Loops? option.\nIf you need calculations based on normalized values, check the Normalize? box.\nThe centrality measures table is accompanied by visualizations. You can choose how many columns to use when displaying these visualizations by selecting the correct number in Columns.",
+    "text": "Communities are groups of nodes that are more densely interconnected with each other than with the rest of the network. To explore the communities in your model, click on Community detection on the left tab.\nYou can choose from several algorithms to identify communities within your network. If applicable, you may also set the gamma level to adjust the resolution of detection. Available algorithms:\nwalktrap: detects communities using short random walks.\nfast_greedy: uses modularity optimization to find community structure.\nlabel_prop: applies label propagation to assign nodes to communities.\ninfomap: identifies communities based on information flow.\nedge_betweenness: uses edge betweenness centrality to split the network into communities.\nleading_eigen: detects communities using the leading eigenvector of the modularity matrix.\nspinglass: based on the spinglass model from statistical physics.\nThe number in brackets next to each algorithm indicates the number of communities it detected. In the visualization, communities are represented using distinct node colors.\n Finally, you can adjust the following Settings of your network:\n\nCut Value: sets the minimum edge value required for the edge to appear solid (rather than opaque) in the graph.\nMinimum Value: sets the lowest edge value that will be displayed in the graph.\nEdge Label Size: adjusts the font size of edge labels.\nNode Size: controls the visual size of each node.\nNode Label Size: modifies the font size of node labels.\nLayout: Choose between two layout options:\n\nCircle: Positions all nodes in a circular formation, or\nSpring: - ?",
     "crumbs": [
-      "Centralities"
+      "Communities"
     ]
   },
   {
@@ -70,13 +110,13 @@
     ]
   },
   {
-    "objectID": "chapters/chapter9-comparison.html",
-    "href": "chapters/chapter9-comparison.html",
-    "title": "Comparison",
+    "objectID": "chapters/chapter3-summary.html",
+    "href": "chapters/chapter3-summary.html",
+    "title": "3. Summary results",
     "section": "",
-    "text": "To compare networks of different groups or settings, click on Comparison on the left tab.\nDepending on your dataset you can choose different comparison groups by selecting the relevant variable from Choose grouping column. If you have more than two groups, you select them in dropdown menus of Choose group 1 and Choose group 2.\nThe Difference Network will show the difference in edge strength by subtracting the velus from group 2 from group 1. You can also access other metrics regarding group comparison.\nBy clicking on Mosaic, you can see the mosaic plot of code frequency with statistical significance of the differences.\nCentralities show the centralities measures of each code divided by group. Here you can exclude irrelevant centralities by removing their names from the Centralities box. To add them back, select from the drop-down list of all available centralities.\nTo include loops (edges that return to the same code), check the Loops? option.\nIf you need calculations based on normalized values, check the Normalize? box.\nThe centrality measures table is accompanied by visualizations. You can choose how many columns to use when displaying these visualizations by selecting the correct number in Columns.\n\nTo compare two models and determine whether their differences are statistically significant, you can perform a Permutation test by checking the corresponding box. This test works by repeatedly shuffling and comparing the data to generate a distribution of differences under the null hypothesis. You can also adjust the number of Iteratations to control how many permutations are performed, which affects the accuracy of the resulting significance estimate, and set the level - is this the level of statistical significance? of stastical significance that you are interested in. Finally, you can also conduct a Paired test - is this the parametric test? the network did not change much, when I ran it. When you run the permutation and statistical tests, the Mosaic and Centralities tabs are automatically updated to reflect the results. \nYou can also adjust the following Settings in your permutation network:\n\nCut Value: sets the minimum edge value required for the edge to appear solid (rather than opaque) in the graph.\nMinimum Value: sets the lowest edge value that will be displayed in the graph.\nEdge Label Size: adjusts the font size of edge labels.\nNode Size: controls the visual size of each node.\nNode Label Size: modifies the font size of node labels.\nLayout: Choose between two layout options:\n\nCircle: Positions all nodes in a circular formation, or\nSpring: - ?",
+    "text": "By selecting Summary results in the left tab, you will access three tables:\n\nSummary Statistics: that shows your overall network metrics, such as node count, mean distance, or reciprocity. The values will vary depending on the analysis that you have selected.\nInitial Probabilities: this metrics indicates the probability of a code to be the first code in the sequence.\nTransition Matrix: Depending on the analysis that you are performing, one of the following matrices will be displayed:\n\nIf you selected relative analysis, you will see a Transition Probability Matrix, showing the transition probabilities between codes.\nIf you selected frequency analysis, you will see a Transition Frequency Matrix showing the transition frequencies between codes.\nIf you selected co-occurence analysis, you will see a Co-occurence Matrix of code co-occurence within one unit.",
     "crumbs": [
-      "Comparison"
+      "Summary"
     ]
   },
   {
@@ -87,46 +127,6 @@
     "text": "This tutorial demonstrates the functionalities of the Transition Network Analysis (TNA) Shiny app developed by Sonsoles López-Pernas: https://sonsoleslp.shinyapps.io/tna-app/.\nThis tutorial uses Sample Data, provided within the TNA app, to showcase the app (see section 2.1).",
     "crumbs": [
       "Intro"
-    ]
-  },
-  {
-    "objectID": "chapters/chapter10-validation.html",
-    "href": "chapters/chapter10-validation.html",
-    "title": "Validation",
-    "section": "",
-    "text": "To validate edge weight accuracy and overall model stability, you can perform bootstrapping by selecting Validation from the left-hand tab. Bootstrapping involves repeatedly resampling the original data with replacement to generate new datasets, where some data points may appear multiple times while others may be excluded. You can adjust the number of Iterations, select level - is this the level of statistical significance?, and choose between two bootstrapping methods: stability or threshold. Additionally, you can define the Consistency range, which sets the lower and upper bounds of the bootstrap confidence intervals for transitions. Once all parameters are set, click Bootstrap. In the resulting network visualization, stable connections will appear in blue, while removed or unstable connections will be shown in red.\n\nYou can also adjust the following Settings in your bootstrapped model:\n\nCut Value: sets the minimum edge value required for the edge to appear solid (rather than opaque) in the graph.\nMinimum Value: sets the lowest edge value that will be displayed in the graph.\nEdge Label Size: adjusts the font size of edge labels.\nNode Size: controls the visual size of each node.\nNode Label Size: modifies the font size of node labels.\nLayout: Choose between two layout options:\n\nCircle: Positions all nodes in a circular formation, or\nSpring: - ?",
-    "crumbs": [
-      "Validation"
-    ]
-  },
-  {
-    "objectID": "chapters/chapter4-vis.html",
-    "href": "chapters/chapter4-vis.html",
-    "title": "Visualization",
-    "section": "",
-    "text": "You can find your network visualization under Visualization on the left tab.\n\nTo explore your network, you can adjust the following Settings:\n\nCut Value: sets the minimum edge value required for the edge to appear solid (rather than opaque) in the graph.\nMinimum Value: sets the lowest edge value that will be displayed in the graph.\nEdge Label Size: adjusts the font size of edge labels.\nNode Size: controls the visual size of each node.\nNode Label Size: modifies the font size of node labels.\nLayout: Choose between two layout options:\n\nCircle: Positions all nodes in a circular formation, or\nSpring: - how is it determined? based on values and centrality?",
-    "crumbs": [
-      "Visualization"
-    ]
-  },
-  {
-    "objectID": "chapters/chapter6-communities.html",
-    "href": "chapters/chapter6-communities.html",
-    "title": "Community Detection",
-    "section": "",
-    "text": "Communities are groups of nodes that are more densely interconnected with each other than with the rest of the network. To explore the communities in your model, click on Community detection on the left tab.\nYou can choose from several algorithms to identify communities within your network. If applicable, you may also set the gamma level to adjust the resolution of detection. Available algorithms:\nwalktrap: detects communities using short random walks.\nfast_greedy: uses modularity optimization to find community structure.\nlabel_prop: applies label propagation to assign nodes to communities.\ninfomap: identifies communities based on information flow.\nedge_betweenness: uses edge betweenness centrality to split the network into communities.\nleading_eigen: detects communities using the leading eigenvector of the modularity matrix.\nspinglass: based on the spinglass model from statistical physics.\nThe number in brackets next to each algorithm indicates the number of communities it detected. In the visualization, communities are represented using distinct node colors.\n Finally, you can adjust the following Settings of your network:\n\nCut Value: sets the minimum edge value required for the edge to appear solid (rather than opaque) in the graph.\nMinimum Value: sets the lowest edge value that will be displayed in the graph.\nEdge Label Size: adjusts the font size of edge labels.\nNode Size: controls the visual size of each node.\nNode Label Size: modifies the font size of node labels.\nLayout: Choose between two layout options:\n\nCircle: Positions all nodes in a circular formation, or\nSpring: - ?",
-    "crumbs": [
-      "Communities"
-    ]
-  },
-  {
-    "objectID": "chapters/chapter3-summary.html",
-    "href": "chapters/chapter3-summary.html",
-    "title": "3. Summary results",
-    "section": "",
-    "text": "By selecting Summary results in the left tab, you will access three tables:\n\nSummary Statistics: that shows your overall network metrics, such as node count, mean distance, or reciprocity. The values will vary depending on the analysis that you have selected.\nInitial Probabilities: this metrics indicates the probability of a code to be the first code in the sequence.\nTransition Matrix: Depending on the analysis that you are performing, one of the following matrices will be displayed:\n\nIf you selected relative analysis, you will see a Transition Probability Matrix, showing the transition probabilities between codes.\nIf you selected frequency analysis, you will see a Transition Frequency Matrix showing the transition frequencies between codes.\nIf you selected co-occurence analysis, you will see a Co-occurence Matrix of code co-occurence within one unit.",
-    "crumbs": [
-      "Summary"
     ]
   },
   {
