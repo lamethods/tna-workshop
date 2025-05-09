@@ -16,6 +16,9 @@ jobs:
           r-version: '4.4.1' # The R version to download (if necessary) and use.
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
+      - name: Install Quarto extensions
+        run: |
+          quarto install extension quarto-ext/tabset
 
       - name: Render Quarto project
         run: quarto render --execute
