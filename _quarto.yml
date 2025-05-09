@@ -16,7 +16,6 @@ website:
   twitter-card: true
   site-url: https://lamethods.github.io/tna-workshop
   open-graph: true
-  fig-align: "center"
   sidebar:
     contents:
       - text: "Intro"
