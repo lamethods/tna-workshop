@@ -18,13 +18,6 @@ jobs:
       - name: Render Quarto project
         run: quarto render
 
-      - name: Commit rendered site
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/
-          git commit -m "Render Quarto site" || echo "No changes to commit"
-          git push
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
