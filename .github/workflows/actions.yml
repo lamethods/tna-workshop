@@ -1,4 +1,16 @@
-- name: Render Quarto Project
-  uses: quarto-dev/quarto-actions/render@v2
-  with:
-    to: html # If set, it will be equivalent to `quarto render --to html`
+on:
+  push:
+    branches: main
+  pull_request:
+    branches: main
+  # to be able to trigger a manual build
+  workflow_dispatch:
+
+name: Render and deploy website 
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    - name: Render Quarto Project
+      uses: quarto-dev/quarto-actions/render@v2
+      with:
+        to: html # If set, it will be equivalent to `quarto render --to html`
