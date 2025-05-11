@@ -50,9 +50,14 @@ You can choose `Analysis Type` and click on `Analyze`.
 
 Selecting `Sequence Data` means that your data is in the sequence or wide format. An example of sequence data can be seen in section 2.1. To upload the data, click on `Browse`. This type of data is stored in R sequence stslist object (often saved as RDS files).
 
-After successfully uploading your data, you can choose `Analysis Type` and click on `Analyze`.
 
 ![](vis/fig4.png){width=70%} 
+The preview on the right will look something like the image below:
+![](vis/fig4b.png){width=70%} 
+
+
+After successfully uploading your data, you can choose `Analysis Type` and click on `Analyze`.
+
 
 ## 2.3 Long Data
 
@@ -76,6 +81,12 @@ After successfully uploading your data, you can choose `Analysis Type`, and clic
 
 ## 2.4 Transition Matrix
 
+A transition matrix contains the probability of transitioning from one node to another (see iamge below).
+
+![](vis/fig6b.png)
+
+
 After successfully uploading your data, you can choose `Analysis Type` (see section 2.5), and click on `Analyze`.
 
 ![](vis/fig6.png)
+
