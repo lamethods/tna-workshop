@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://lamethods.github.io/tna-workshop/chapters/chapter8-cliques.html</loc>
-    <lastmod>2025-05-09T20:40:29.788Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lamethods.github.io/tna-workshop/chapters/chapter3-summary.html</loc>
-    <lastmod>2025-05-09T20:49:46.439Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lamethods.github.io/tna-workshop/chapters/chapter6-communities.html</loc>
-    <lastmod>2025-05-09T20:39:53.862Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lamethods.github.io/tna-workshop/chapters/chapter4-vis.html</loc>
-    <lastmod>2025-05-09T20:34:06.440Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lamethods.github.io/tna-workshop/chapters/chapter10-validation.html</loc>
-    <lastmod>2025-05-09T20:52:40.097Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lamethods.github.io/tna-workshop/chapters/chapter1-intro.html</loc>
-    <lastmod>2025-05-09T20:21:35.595Z</lastmod>
+    <loc>https://lamethods.github.io/tna-workshop/chapters/chapter5-centralities.html</loc>
+    <lastmod>2025-05-09T20:54:45.898Z</lastmod>
   </url>
   <url>
     <loc>https://lamethods.github.io/tna-workshop/chapters/chapter9-comparison.html</loc>
-    <lastmod>2025-05-09T20:46:18.823Z</lastmod>
+    <lastmod>2025-05-09T20:54:45.898Z</lastmod>
   </url>
   <url>
-    <loc>https://lamethods.github.io/tna-workshop/chapters/chapter2-data.html</loc>
-    <lastmod>2025-05-09T20:49:40.559Z</lastmod>
+    <loc>https://lamethods.github.io/tna-workshop/chapters/chapter4-vis.html</loc>
+    <lastmod>2025-05-09T20:54:45.898Z</lastmod>
   </url>
   <url>
-    <loc>https://lamethods.github.io/tna-workshop/chapters/chapter5-centralities.html</loc>
-    <lastmod>2025-05-09T20:39:10.660Z</lastmod>
+    <loc>https://lamethods.github.io/tna-workshop/chapters/chapter10-validation.html</loc>
+    <lastmod>2025-05-09T20:54:45.898Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lamethods.github.io/tna-workshop/chapters/chapter6-communities.html</loc>
+    <lastmod>2025-05-09T20:54:45.898Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lamethods.github.io/tna-workshop/chapters/chapter8-cliques.html</loc>
+    <lastmod>2025-05-09T20:54:45.898Z</lastmod>
   </url>
   <url>
     <loc>https://lamethods.github.io/tna-workshop/chapters/chapter11-more.html</loc>
-    <lastmod>2025-05-09T20:49:36.302Z</lastmod>
+    <lastmod>2025-05-09T20:54:45.898Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lamethods.github.io/tna-workshop/chapters/chapter2-data.html</loc>
+    <lastmod>2025-05-09T20:54:45.898Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lamethods.github.io/tna-workshop/chapters/chapter3-summary.html</loc>
+    <lastmod>2025-05-09T20:54:45.898Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lamethods.github.io/tna-workshop/chapters/chapter1-intro.html</loc>
+    <lastmod>2025-05-09T20:54:45.898Z</lastmod>
   </url>
 </urlset>
