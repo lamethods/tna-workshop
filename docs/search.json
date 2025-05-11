@@ -94,7 +94,7 @@
     "href": "chapters/chapter2-data.html#sequence-data",
     "title": "Input Data",
     "section": "2.2 Sequence Data",
-    "text": "2.2 Sequence Data\nSelecting Sequence Data means that your data is in the sequence or wide format. An example of sequence data can be seen in section 2.1. To upload the data, click on Browse. This type of data is stored in R sequence stslist object (often saved as RDS files).\nAfter successfully uploading your data, you can choose Analysis Type and click on Analyze.",
+    "text": "2.2 Sequence Data\nSelecting Sequence Data means that your data is in the sequence or wide format. An example of sequence data can be seen in section 2.1. To upload the data, click on Browse. This type of data is stored in R sequence stslist object (often saved as RDS files).\n The preview on the right will look something like the image below: \nAfter successfully uploading your data, you can choose Analysis Type and click on Analyze.",
     "crumbs": [
       "Data"
     ]
@@ -114,7 +114,7 @@
     "href": "chapters/chapter2-data.html#transition-matrix",
     "title": "Input Data",
     "section": "2.4 Transition Matrix",
-    "text": "2.4 Transition Matrix\nAfter successfully uploading your data, you can choose Analysis Type (see section 2.5), and click on Analyze.",
+    "text": "2.4 Transition Matrix\nA transition matrix contains the probability of transitioning from one node to another (see iamge below).\n\nAfter successfully uploading your data, you can choose Analysis Type (see section 2.5), and click on Analyze.",
     "crumbs": [
       "Data"
     ]
