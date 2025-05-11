@@ -1,5 +1,6 @@
 project:
   type: website
+
   output-dir: docs
 format:
   html:
@@ -11,6 +12,7 @@ metadata:
     - Mohammed Saqr
 website:
   title: "TNA workshop"
+  image: https://sonsoles.me/tna/logo.png
   google-analytics: "G-Y4VBV3J9WD"
   repo-url: https://github.com/lamethods/tna-workshop/
   twitter-card: true
